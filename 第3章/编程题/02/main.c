@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int item_num = 0;
+    float unit_price = 0.0f;
+    int year = 0, month = 0, day = 0;
+
+    printf("Enter item number: ");
+    scanf("%d", &item_num);
+    printf("Enter unit price: ");
+    scanf("%f", &unit_price);
+    printf("Enter purchase date (mm/dd/yyyy): ");
+    scanf("%d/%d/%d", &month, &day, &year);
+
+    printf("Item\tUnit\tPurchase\n");
+    printf("\tPrice\tDate\n");
+    printf("%d\t$%6.2f\t%d/%.2d/%d\n", item_num, unit_price, month, day, year);
+
+    return 0;
+}
